@@ -59,3 +59,5 @@ selectores.forEach(selector => {
     console.warn(`"${selector}" → NO encontrado`);
   }
 });
+
+6) (Bonus):Añade un snippet JS que cambie el backgroundColor de cada campo para demostrar que el selector apunta bien.
