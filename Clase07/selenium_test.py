@@ -36,7 +36,7 @@ driver.get("https://www.google.com")
 #puedo usar el comando "python (nombre del archivo).py" para ejecutar el codigo y se va a abrir el navegador con la pagina de google
 
 #voy a locarlizar el campo busqueda de Google
-input_google = driver.find_element(BY.name, "q") #puedo hacerlo por name, id, class, etc.
+input_google = driver.find_element(By.NAME, "q") #puedo hacerlo por name, id, class, etc.
 
 #puedo usar input_google = wait.until() para generar espera
 #tambien puedo crearle una condicion desde el header y pasarle otro metodo. Por ejemplo:
