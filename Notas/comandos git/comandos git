@@ -24,39 +24,43 @@ git remote add origin https://github.com/tu-usuario/proyecto.git
 
 git init
 
-Convierte la carpeta actual en un repositorio Git local
+    Convierte la carpeta actual en un repositorio Git local
 
 git clone URL
 
-Descarga una copia de un repositorio remoto
+    Descarga una copia de un repositorio remoto
 
 git status
 
-Muestra el estado actual del repositorio
+    Muestra el estado actual del repositorio
 
 git add archivo.txt
 
-Añade un archivo al área de preparación
+    Añade un archivo al área de preparación
 
 git commit -m "mensaje"
 
-Crea un nuevo commit con los cambios preparados
+    Crea un nuevo commit con los cambios preparados
 
 git push origin main
 
-Envía los commits locales al repositorio remoto
+    Envía los commits locales al repositorio remoto
 
 git pull origin main
 
-Obtiene y fusiona cambios del repositorio remoto
+    Obtiene y fusiona cambios del repositorio remoto
+
+git push origin HEAD
+
+    Toma automáticamente el nombre de la rama en la que estás parado
 
 git branch nueva-rama
 
-Crea una nueva rama
+    Crea una nueva rama
 
 git checkout nueva-rama
 
-Cambia a la rama especificada
+    Cambia a la rama especificada
 
 
 ---------------------
