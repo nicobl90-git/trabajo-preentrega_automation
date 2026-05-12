@@ -9,8 +9,8 @@ from selenium.webdriver.chrome.service import Service
 #Este servicio recibe el chrome driver manager y me instala la version correcta segun mi navegador
 
 #Otros from
-#from selenium.webdriver.common.by import By #para localizar los elementos
-#from selenium.webdriver.common.keys import Keys #para usar el enter
+from selenium.webdriver.common.by import By #para localizar los elementos
+from selenium.webdriver.common.keys import Keys #para usar el enter
 #from selenium.webdriver.support.ui import WebDriverWait #para generar esperas explicitas
 
 
