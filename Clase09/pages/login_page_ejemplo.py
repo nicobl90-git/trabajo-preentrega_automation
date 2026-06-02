@@ -1,3 +1,9 @@
+"""
+Para comenzar a aplicar el patrón Page Object Model, vamos a crear nuestra primera clase de página: la correspondiente a la pantalla de login. Esta clase vivirá en el archivo pages/login_page.py, siguiendo la convención de mantener una clase por archivo y reflejar en el nombre su propósito funcional.
+
+Este archivo encapsulará toda la lógica asociada a la página de inicio de sesión: desde su URL, pasando por los elementos que la componen, hasta los métodos que permiten interactuar con ella. De esta forma, cualquier cambio futuro en la interfaz de login (por ejemplo, un nuevo ID para el botón de ingreso) podrá manejarse modificando una sola clase, sin afectar directamente los tests.
+"""
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC

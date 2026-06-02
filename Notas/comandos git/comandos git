@@ -68,3 +68,23 @@ git checkout nueva-rama
 git add . Marca todos los archivos modificados para guardar
 git commit -m "..."Guarda los cambios localmente con un mensaje
 git push origin master  Sube los cambios a GitHub
+
+
+---------------------
+
+NUEVO repositorio
+
+git remote -v
+
+    verifica el repositorio actual
+
+git remote set-url origin https://github.com/nicobl90-git/NOMBRE-DEL-NUEVO-REPO.git
+
+    cambiar URL al nuevo repositorio
+
+Verificar nuevamente y subir todos
+
+git add .
+git commit -m "Inicio del proyecto en nuevo repositorio"
+git push -u origin main
+
