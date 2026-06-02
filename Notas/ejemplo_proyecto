@@ -1,0 +1,37 @@
+- pages/
+-- __init__.py
+-- login_page-py
+-- inventory_page.py
+-- cart_page.py
+
+- tests/
+-- __init__.py
+-- test_login.py
+-- test_catalog.py
+-- test_cart.py
+
+- conftest.py
+- README.md
+
+
+pages/: Cada archivo representa una página específica de SauceDemo. Por ejemplo, login_page.py encapsula todo lo relacionado con el login de 
+
+tests/: Los tests importan y usan las clases de pages/ pero no conocen los selectores internos
+
+conftest.py: Centraliza la configuración del WebDriver para que todos los tests la compartan
+
+Separación clara: Si SauceDemo cambia su diseño, solo modificamos la clase correspondiente en pages/, no todos los tests
+
+
+
+
+Análisis: Identificamos las páginas principales de SauceDemo que queremos automatizar
+
+Creación: Escribimos una clase Python por cada página (ej: LoginPage para la pantalla de login)
+
+Encapsulación: Cada clase contiene los selectores y métodos específicos de esa página
+
+Uso: Los tests importan estas clases y las usan sin conocer detalles internos de HTML
+
+
+Con esta estructura, agregar una nueva pantalla de SauceDemo implica solo añadir pages/nueva_page.py y tests/test_nueva_page.py, sin tocar el código existente.
